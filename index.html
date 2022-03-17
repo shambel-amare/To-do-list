@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do list</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Title -->
+    <section class="container">
+      <div class="wrapper">
+        <section class="header">
+          <h1>Tasks To Do!</h1>
+        </section>
+        <!-- Adding new task  -->
+        <section class="task-input">
+          <form id="task-form">
+            <input
+              type="text"
+              placeholder="Add new task"
+              class="input-item"
+              id="task"
+            />
+            <input class="btn" type="submit" value="Add Task" />
+          </form>
+        </section>
+        <!-- Tasks List -->
+        <h2>Tasks</h2>
+        <input
+          type="text"
+          placeholder="Filter Tasks"
+          class="input-item"
+          name="filter"
+          id="filter"
+        />
+        <ul class="task-collection"></ul>
+        <section class="clear-all">
+          <button class="clear-btn">Clear All Tasks</button>
+        </section>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
